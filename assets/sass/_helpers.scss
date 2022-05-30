@@ -1,0 +1,148 @@
+.after {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: 0;
+  top: 0;
+}
+.theme-color, .yellow-text{
+ color: $theme-color;
+}
+.white-text{
+  color: $white;
+}
+.black-text{
+  color: $black;
+}
+.green-text{
+  color: #7ac943;
+}
+.btn{
+  padding: 20px 30px;
+  font-size: $font-size-base;
+  font-family: $muli;
+  font-weight: $extra-bold;
+  background-color: $black;
+  border-radius: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 3px;
+  color: $white;
+  transform: skew(24deg);
+  & > span { display: inline-block; transform: skew(-24deg); }
+  &:hover,&:focus{
+    color: $black;
+    background-color: $theme-color;
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media #{$xsm-layout} {
+    font-size: 14px;
+      }
+  
+}
+.yl-btn{
+  color: $black;
+  background-color: $theme-color;
+  &:hover{
+    color: $theme-color;
+    background-color: $black;
+  }
+}
+.g-form-container .saveForm{
+  width: auto;
+  padding: 0!important;
+  font-size: $font-size-base;
+  font-family: $muli;
+  font-weight: $extra-bold;
+  background-color: $black !important;
+  border-radius: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 3px;
+  color: $white;
+  transform: skew(24deg);
+  display: inline-block;
+  margin: 0 0 0 20px !important;
+  & > .g-btn-success { display: inline-block; transform: skew(-24deg); background-color: transparent !important;
+    outline: 0px;
+    box-shadow: none;
+    outline: 0px;
+    box-shadow: none;
+    padding: 20px 70px;
+    text-transform: unset;
+    font-size: $font-size-base;
+    font-family: $muli;
+    font-weight: $extra-bold;
+    &:focus{
+      outline: 0px;
+      box-shadow: none;
+    }
+  }
+  &:hover,&:focus{
+    color: $black;
+    background-color: $theme-color !important;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.ml-60{
+  margin-left: 60px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.mt-50{
+  margin-top: 50px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+ }
+hr {
+  border-top: 1px solid $gray;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+.pb-100{
+  padding-bottom: 100px;
+}
+
+.slick-next {
+  right:-25px;
+}
+.slick-prev {
+  left: -25px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 45%;
+  background-color: $white;
+  border: 0;
+  box-shadow: none;
+  z-index: 99;
+  cursor: pointer;
+  outline: none;
+  font-size: 45px;
+  color: $black;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  box-shadow: 0px 15px 62px 0px rgba(0, 0, 0, 0.3);
+  &:hover, &:focus {
+    color: $theme-color;
+  }
+}
+
